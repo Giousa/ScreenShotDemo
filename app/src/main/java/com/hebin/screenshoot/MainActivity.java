@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.btn_scrollview:
                 tvTip.setText("我是scrollview的截图");
-                ivScreen.setImageBitmap(ScreenShoot.getScrollViewBitmap(svMain, path + "/scrollview.jpg"));
+                ivScreen.setImageBitmap(ScreenShot.getScrollViewBitmap(svMain, path + "/scrollview.jpg"));
                 break;
             case R.id.btn_recyclerview:
                 tvTip.setText("我是recyclerview的截图");
-                ivScreen.setImageBitmap(ScreenShoot.getRecyclerviewBitmap(rvList, path + "/recyclerview.jpg"));
+                ivScreen.setImageBitmap(ScreenShot.getRecyclerviewBitmap(rvList, path + "/recyclerview.jpg"));
                 break;
         }
     }

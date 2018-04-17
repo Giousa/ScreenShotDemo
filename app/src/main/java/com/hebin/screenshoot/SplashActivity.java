@@ -1,6 +1,5 @@
 package com.hebin.screenshoot;
 
-import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
                 if (!file.exists()) {
                     file.mkdirs();
                 }
-                ScreenShoot.getViewBitmap(llRoot, path+i+".jpg");
+                ScreenShot.getViewBitmap(llRoot, path+i+".jpg");
             }
         });
     }
